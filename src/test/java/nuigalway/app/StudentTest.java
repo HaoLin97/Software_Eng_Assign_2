@@ -30,7 +30,6 @@ public class StudentTest {
     @Test
     public void TestJunit_2_setters()
     {/* Testing the setter methods */
-
         String name = "Hao Lin";
         int age = 22;
         String dob = "13-10-1997";
