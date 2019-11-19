@@ -1,9 +1,9 @@
 package nuigalway.app;
 
-import java.awt.*;
 import java.util.ArrayList;
-public class Module {
 
+public class Module {
+    // Initialising variables
     private String module_name;
     private String id;
     private ArrayList<Student> list_of_students = new ArrayList<Student>();
@@ -17,21 +17,14 @@ public class Module {
 
     public void addStudent(Student new_Student)
     {
+        //Adding the student to the arraylist and adding the student's course to the list
         list_of_students.add(new_Student);
         addAssociated_course(new_Student.getCourse());
     }
 
-    public void removeStudent(String to_remove)
-    {
-        for(Student student : list_of_students)
-        {
-            if(student.getUsername().equals(to_remove))
-            {
-                list_of_students.remove(student);
-                return;
-            }
-        }
-        System.out.println("Not in list of students");
+    public void removeStudent(Student student)
+    {//Removing the student from the arraylist
+        list_of_students.remove(student);
     }
 
 

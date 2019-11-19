@@ -1,7 +1,7 @@
 package nuigalway.app;
 
 public class Student {
-
+    //Initialising variables
     private String name;
     private int age;
     private String date_of_birth;
@@ -70,6 +70,7 @@ public class Student {
     }
 
     public String getUsername() {
+        //Refreshes the username and returns the username
         this.username = name + student_id;
         return username;
     }

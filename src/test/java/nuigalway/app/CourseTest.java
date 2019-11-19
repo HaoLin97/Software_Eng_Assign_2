@@ -12,6 +12,8 @@ public class CourseTest {
 
     @Test
     public void Test_Junit_1_add_remove_modules(){
+        /*Testing for the adding and removing of modules into the course*/
+
         DateTime start = new DateTime("2000-01-01");
         DateTime end = new DateTime("2010-01-01");
         Course_Programme uut = new Course_Programme("BP", start, end);
@@ -27,13 +29,14 @@ public class CourseTest {
 
         Assert.assertEquals(expected, uut.getList_of_modules());
 
-//        expected.remove(m1);
+        expected.remove(m1);
         uut.remove_module(m1);
 
         Assert.assertEquals(expected, uut.getList_of_modules());
     }
     @Test
     public void Test_Junit_2_add_remove_students(){
+        /*Testing for the adding and removing of students into the course*/
         DateTime start = new DateTime("2000-01-01");
         DateTime end = new DateTime("2010-01-01");
         Course_Programme uut = new Course_Programme("BP", start, end);
@@ -57,7 +60,7 @@ public class CourseTest {
 
     @Test
     public void Test_Junit_3_getters_setters()
-    {
+    {/* Putting all simple methods into 1 test, aka getters and setters*/
         DateTime start = new DateTime("2000-01-01");
         DateTime end = new DateTime("2010-01-01");
 

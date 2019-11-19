@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Course_Programme {
 
+    // Initialising variables
     String name;
     DateTime start_date;
     DateTime end_date;
@@ -47,6 +48,7 @@ public class Course_Programme {
     }
     public void add_student(Student student)
     {
+        // If the student isn't already in the arraylist, add student
         if(!list_of_students.contains(student))
         {
             list_of_students.add(student);
@@ -55,6 +57,7 @@ public class Course_Programme {
 
     public void remove_student(Student student)
     {
+        // If the student is in the arraylist, remove the student
         if(list_of_students.contains(student))
         {
             list_of_students.remove(student);
@@ -67,6 +70,7 @@ public class Course_Programme {
 
     public void add_module(Module module)
     {
+        // If the modele isn't already in the arraylist, add student
         if(!list_of_modules.contains(module))
         {
             list_of_modules.add(module);
@@ -75,6 +79,7 @@ public class Course_Programme {
 
     public void remove_module(Module module)
     {
+        // If the modele is already in the arraylist, remove student
         if(list_of_modules.contains(module))
         {
             list_of_modules.remove(module);
